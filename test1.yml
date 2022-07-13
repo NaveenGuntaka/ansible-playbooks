@@ -1,0 +1,15 @@
+---
+- hosts: all
+  tasks:
+   - name: creating a file with content
+     copy:
+       dest: /opt/test.py
+       content:
+           num1=50
+           num2=50
+           num3=70
+           sum=num3+num2+num1
+           print("the sum of three values")
+           print(sum)
+           
+
